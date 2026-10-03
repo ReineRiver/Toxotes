@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "toxotes"
+version = "0.1.0"
+description = "Photometry pipeline for the Principia 10-inch Cygnus campaign"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "astropy>=6.0",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+archives = ["astroquery>=0.4.7", "lightkurve>=2.4"]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+include = ["toxotes*"]

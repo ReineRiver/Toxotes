@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/
+*.fits
+*.fit
+figures/
+.venv/
+*.egg-info/
+build/
+dist/
